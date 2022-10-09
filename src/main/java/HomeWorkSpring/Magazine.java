@@ -2,19 +2,14 @@ package HomeWorkSpring;
 
 
 import HomeWorkSpring.config.AppConfig;
-import HomeWorkSpring.config.ConnectManager;
 import HomeWorkSpring.dao.BuyerDAO;
 import HomeWorkSpring.dao.ProductDAO;
 import HomeWorkSpring.dao.PurchaseDAO;
-import HomeWorkSpring.dao.SimplePurchase;
-import HomeWorkSpring.entities.Buyer;
-import HomeWorkSpring.entities.Product;
 import HomeWorkSpring.entities.Purchase;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
 import java.util.List;
-import java.util.Objects;
 
 public class Magazine {
     public static void main(String[] args) {
