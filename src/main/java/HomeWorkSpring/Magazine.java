@@ -16,18 +16,10 @@ public class Magazine {
         ApplicationContext context=new AnnotationConfigApplicationContext(AppConfig.class);
         ProductDAO productDAO=context.getBean(ProductDAO.class);
 
-       // System.out.println(productDAO.getAllProduct());
-       // System.out.println();
-
         BuyerDAO buyerDAO=context.getBean(BuyerDAO.class);
-
-       // System.out.println(buyerDAO.getAllBuyer());
-        //System.out.println();
 
         PurchaseDAO purchaseDAO=context.getBean(PurchaseDAO.class);
 
-
-        //System.out.println(productDAO.getProductById(1L));
         Long idBuyer=1L;
         Long idProduct=2L;
 
@@ -35,7 +27,6 @@ public class Magazine {
         System.out.println(productDAO.getAllBuyerByIdProduct(idBuyer));
 
         System.out.println();
-
 
         System.out.println(productDAO.getProductById(idProduct));
         System.out.println(buyerDAO.getAllBuyerByIdProduct(idProduct));
