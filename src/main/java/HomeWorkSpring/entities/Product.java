@@ -1,6 +1,7 @@
 package HomeWorkSpring.entities;
 
 import javax.persistence.*;
+import java.util.List;
 
 @Entity
 @Table(name = "product")
@@ -15,6 +16,9 @@ public class Product {
 
     @Column(name = "price")
     private int price;
+
+    @OneToMany(mappedBy="product")
+    private List<Purchase> list;
 
     public Product() {
     }
