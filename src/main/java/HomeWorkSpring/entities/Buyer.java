@@ -15,7 +15,7 @@ public class Buyer {
     @Column(name="name")
     private String name;
 
-    @OneToMany(mappedBy="buyer")
+    @OneToMany(mappedBy = "buyer")
     private List<Purchase> list;
 
     public Buyer(List<Purchase> list) {

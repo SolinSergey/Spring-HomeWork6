@@ -1,27 +1,26 @@
 package HomeWorkSpring.entities;
 
 import javax.persistence.*;
-import java.util.Date;
 
 @Entity
-@Table(name="purchase")
+@Table(name = "purchase")
 public class Purchase {
     @Id
-    @Column(name="id")
+    @Column(name = "id")
     private Long id;
 
     @ManyToOne
-    @JoinColumn(name="id_product")
+    @JoinColumn(name = "id_product")
     private Product product;
 
     @ManyToOne
-    @JoinColumn(name="id_buyer")
+    @JoinColumn(name = "id_buyer")
     private Buyer buyer;
 
-    @Column(name="date")
+    @Column(name = "date")
     private String date;
 
-    @Column(name="cost")
+    @Column(name = "cost")
     private Integer cost;
 
     public Purchase() {
