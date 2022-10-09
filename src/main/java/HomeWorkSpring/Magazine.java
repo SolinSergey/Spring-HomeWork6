@@ -52,19 +52,5 @@ public class Magazine {
             }
         } else System.out.println("Покупки не найдены");
 
-
-
-
-        System.out.println();
-
-
-
-        //System.out.println("Создана поликлиника");
-       // HomeWorkSpring.Registry registry=context.getBean(Registry.class);
-        //HomeWorkSpring.Patient patient= context.getBean("patient",Patient.class);
-        //System.out.println();
-        //System.out.println("В поликлинику пришел пациент");
-        //System.out.println();
-        //registry.setRequestFromPatient(patient);
     }
 }
